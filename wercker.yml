@@ -19,7 +19,8 @@ test:
     - npm-test
 
 lint:
-  - script:
-      name: run linter
-      code: |
-        npm run lint
+  steps:
+    - script:
+        name: run linter
+        code: |
+          npm run lint
