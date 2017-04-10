@@ -13,6 +13,6 @@
     "scripts": {
       "test": "./node_modules/mocha/bin/mocha",
       "start": "app.js",
-      "lint": "echo \"no linting yet\" && exit 0",
+      "lint": "echo \"no linting yet\" && exit 0"
     }
   }
