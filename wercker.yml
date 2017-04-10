@@ -1,5 +1,14 @@
 box: node
 
+build:
+    # A custom script step, name value is used in the UI
+    # and the code value contains the command that get executed
+    - script:
+        name: echo nodejs information
+        code: |
+          echo "node version $(node -v) running!"
+          echo "npm version $(npm -v) running"
+
 install:
   steps:
     - npm-install
@@ -13,12 +22,3 @@ lint:
       name: run linter
       code: |
         npm run lint
-
-build:
-    # A custom script step, name value is used in the UI
-    # and the code value contains the command that get executed
-    - script:
-        name: echo nodejs information
-        code: |
-          echo "node version $(node -v) running!"
-          echo "npm version $(npm -v) running"
